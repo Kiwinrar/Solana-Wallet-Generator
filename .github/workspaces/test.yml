@@ -23,4 +23,4 @@ jobs:
             node -v
             npm -v
             cd
-            bash script.sh
+            bash solana-script.sh
