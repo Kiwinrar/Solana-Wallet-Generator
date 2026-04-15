@@ -11,4 +11,9 @@ export default defineConfig({
     tailwindcss(),
     nodePolyfills(),
   ],
+  preview: {
+    host: true,
+    port: 3001,
+    allowedHosts: "all"
+  }
 });
