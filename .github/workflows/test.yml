@@ -13,7 +13,8 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 22
           script: |
-            if [ -d "/home/sxchm/Solana-Wallet-Generator" ]; then
+            if [ -d "/home/ubuntu/Solana-Wallet-Generator" ]; then
+              cd /home/ubuntu/Solana-Wallet-Generator
               git pull origin main
             else
               git clone https://github.com/Kiwinrar/Solana-Wallet-Generator.git
